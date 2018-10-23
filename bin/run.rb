@@ -20,6 +20,7 @@ def get_name
 end
 
 def user_options
+    puts "AVAILABLE OPTIONS"
     puts "[1] My Tickets"
     puts "[2] Today's Movies"
     puts "[3] Movie Times"
