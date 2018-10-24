@@ -6,8 +6,6 @@ class Interface
         user_options
     end
 
-        
-
 
     def start
     puts "Hello! Welcome to FilmGrab!"
@@ -37,6 +35,11 @@ class Interface
         puts "[4] Select Movie Rating"
         puts "-----------------------------------------"
     end
+
+    def user_option_input
+
+        user_o_input= gets.chomp
+
 
 
 end
