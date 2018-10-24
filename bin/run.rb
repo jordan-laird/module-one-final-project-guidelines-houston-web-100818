@@ -62,16 +62,3 @@ user_options
 
 binding.pry
 0
-
-    
-
-
-
-
-
-
-
-
-
-
-
