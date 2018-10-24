@@ -5,13 +5,9 @@ require 'pry'
 
 
     def get_films_from_API
-<<<<<<< jordan
 
         date = Time.now.strftime("%Y-%m-%d")
-=======
-        date = Time.now.strftime("%Y-%m-%d")
 
->>>>>>> master
         headers_we_need = { "api-version" => 'v200',
             "Authorization" => 'Basic RkxBVDpGcTI2WGVzcTZrcGM=',
             "client" => '{{client}}',
@@ -24,11 +20,7 @@ require 'pry'
             "language" => '{{language}}',
             "cache-control" => 'no-cache',
             "Postman-Token" => 'b15c2206-8a61-4ffd-8361-fa24f2408902' }
-<<<<<<< jordan
-        response_string = RestClient.get("https://api-gate2.movieglu.com/cinemaShowTimes/?date=#{date}&cinema_id=6968", headers = headers_we_need)
-=======
-        
->>>>>>> master
+
 
         response_string = RestClient.get("https://api-gate2.movieglu.com/cinemaShowTimes/?date=#{date}&cinema_id=6968", headers = headers_we_need)
 binding.pry
@@ -41,9 +33,6 @@ binding.pry
     end
 end
 get_films_from_API
-
-
-
 
 binding.pry
 0
