@@ -3,3 +3,5 @@ class User < ActiveRecord::Base
     has_many :movies, through: :tickets
 
 end
+
+
