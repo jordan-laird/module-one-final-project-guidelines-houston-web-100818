@@ -10,8 +10,8 @@ class Interface
 
 
     def start
-    puts "Hello! Welcome to FilmGrab!"
-    puts "-----------------------------------------"
+        puts "Hello! Welcome to FilmGrab!"
+        puts "-----------------------------------------"
     end
 
 
