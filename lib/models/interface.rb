@@ -12,6 +12,7 @@ class Interface
     def start
     puts "Hello! Welcome to FilmGrab!"
     puts "-----------------------------------------"
+    end
 
 
     def get_name

@@ -29,10 +29,6 @@ require 'pry'
 end
 get_films_from_API
 
-def start
-    puts "Hello! Welcome to FilmGrab!"
-    puts "-----------------------------------------"
-end
 
 
 
