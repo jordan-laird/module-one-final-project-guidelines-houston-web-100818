@@ -1,3 +1,4 @@
+
 class Interface
 
     def initialize
@@ -43,3 +44,4 @@ class Interface
 
 
 end
+
