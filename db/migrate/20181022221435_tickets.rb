@@ -6,6 +6,5 @@ class Tickets < ActiveRecord::Migration[5.0]
       t.datetime :movie_time
 
     end
-
   end
 end
