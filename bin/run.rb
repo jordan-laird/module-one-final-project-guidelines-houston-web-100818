@@ -5,8 +5,8 @@ require 'pry'
 
 
     def get_films_from_API
-        date = Time.now.strftime("%Y-%m-%d")
 
+        date = Time.now.strftime("%Y-%m-%d")
         headers_we_need = { "api-version" => 'v200',
             "Authorization" => 'Basic RkxBVDpGcTI2WGVzcTZrcGM=',
             "client" => '{{client}}',
@@ -19,14 +19,19 @@ require 'pry'
             "language" => '{{language}}',
             "cache-control" => 'no-cache',
             "Postman-Token" => 'b15c2206-8a61-4ffd-8361-fa24f2408902' }
-        
-
         response_string = RestClient.get("https://api-gate2.movieglu.com/cinemaShowTimes/?date=#{date}&cinema_id=6968", headers = headers_we_need)
+
+        
 binding.pry
         response_hash = JSON.parse(response_string)
         film_information = response_hash["films"].each do |film_content|
         film_name_stored = film_content["film_name"] 
+        times_stored = film_content["times"].each do [times]
+            movie_time = times["start_time"]
+        end
+
         puts "#{film_name_stored}"
+        puts "#{times_stored}"
 
 
     end
