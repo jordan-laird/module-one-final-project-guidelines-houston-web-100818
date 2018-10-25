@@ -8,4 +8,3 @@ gem "require_all"
 gem "rest-client"
 gem 'tty-prompt'
 
-
