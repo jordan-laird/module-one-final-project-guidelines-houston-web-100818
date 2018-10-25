@@ -37,7 +37,7 @@ class Interface
         puts "-----------------------------------------"
     end
 
-    # def user_option_input
+    def user_option_input
 
         user_input = gets.chomp
 
