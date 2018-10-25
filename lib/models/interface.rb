@@ -1,3 +1,4 @@
+
 class Interface
 
     def initialize
@@ -6,12 +7,10 @@ class Interface
         user_options
     end
 
-        
-
 
     def start
-        puts "Hello! Welcome to FilmGrab!"
-        puts "-----------------------------------------"
+    puts "Hello! Welcome to FilmGrab!"
+    puts "-----------------------------------------"
     end
 
 
@@ -38,5 +37,26 @@ class Interface
         puts "-----------------------------------------"
     end
 
+    def user_option_input
+
+        user_input = gets.chomp
+
+        if user_input == 1
+
+        elsif user_input == 2
+            Movie.titles
+        elsif user_input == 3 
+
+        elsif user_input == 4
+
+        else
+
+        end
+            
+
+    end
+
+
 
 end
+
