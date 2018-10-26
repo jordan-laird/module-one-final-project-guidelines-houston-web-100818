@@ -51,6 +51,7 @@ require 'pry'
         else
           puts y
         end
+        start_prompt
     
     # if return_value == "My Tickets"
     #   binding.pry
