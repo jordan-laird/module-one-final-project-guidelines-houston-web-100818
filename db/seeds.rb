@@ -38,7 +38,8 @@ Movie.destroy_all
 # # binding.pry
 # # 0
 
-Movie.create(title: "Halloween (2018)", rating: "R")
+first = Movie.create(title: "Halloween (2018)", rating: "R")
+binding.pry
 Movie.create(title: "A Star is Born", rating: "R")
 Movie.create(title: "Venom", rating: "PG-13")
 Movie.create(title: "Goosebumps 2: Haunted Halloween", rating: "PG")
@@ -54,3 +55,9 @@ Movie.create(title: "Indivisible", rating: "PG-13")
 Movie.create(title: "Johnny English Strikes Again", rating: "PG")
 Movie.create(title: "Free Solo", rating: "PG-13")
 Movie.create(title: "The Oath", rating: "R")
+
+User.create(name: "Janet")
+User.create(name: "Bilikis")
+User.create(name: "Jordan")
+
+Ticket.create(users:"Jordan" movies: "Venom")
