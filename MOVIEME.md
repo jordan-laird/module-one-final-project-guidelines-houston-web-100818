@@ -4,7 +4,7 @@ APP NAME:   `FilmGrab`
 
 ## Objectives
 
-Provides film information to users. Such information includes: current movies showing, ratings, movie titles, ticket availability
+Provides film information to users. Such information includes: current movies titles, ratings, ticket availability
 
 ## Overview
 
