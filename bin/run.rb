@@ -30,9 +30,12 @@ found_user = User.find_or_create_by(name: user_input)
      
     
   elsif return_value == "All Movies"
-    Movie.all.each do |movie|
-      puts movie.title 
-    end
+    selected_title = @prompt.select("Available Options", Movie.all.map{ |movie| movie.title})
+    # Ticket.create(users: found_user.name, movies: selected_title)
+  
+    # Movie.all.each do |movie|
+    #   puts movie.title 
+    # end
  
   elsif return_value == "Find By Rating"
     rating_input = @prompt.select("Available Options", %w(PG PG-13 R))
@@ -46,8 +49,6 @@ found_user = User.find_or_create_by(name: user_input)
 
   # elsif return_value == "Find By Title"
 
-  else 
-    puts "Invalid Command"
   end
   
   0
