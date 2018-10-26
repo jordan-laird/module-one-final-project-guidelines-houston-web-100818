@@ -24,14 +24,16 @@ found_user = User.find_or_create_by(name: user_input)
       puts "You have no tickets"
     else
       Ticket.all.select do |t|
-      t.users == found_user
+      t.users == found_user.name
       end
     end
      
     
   elsif return_value == "All Movies"
     selected_title = @prompt.select("Available Options", Movie.all.map{ |movie| movie.title})
-    # Ticket.create(users: found_user.name, movies: selected_title)
+    selected_movie = Movie.find_by(title: selected_title)
+    Ticket.create(user: found_user, movie: selected_movie)
+    binding.pry
   
     # Movie.all.each do |movie|
     #   puts movie.title 
@@ -51,4 +53,9 @@ found_user = User.find_or_create_by(name: user_input)
 
   end
   
-  0
+  # if user_input == "exit"
+  #       exit
+  #   elsif user_input == "back"
+  #       start_prompt 
+  # end
+  

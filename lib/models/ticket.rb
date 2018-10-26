@@ -1,5 +1,5 @@
 class Ticket < ActiveRecord::Base
-    has_many :movies
-    has_many :users
+    belongs_to :movie
+    belongs_to :user
 
 end
